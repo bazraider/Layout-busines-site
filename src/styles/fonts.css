@@ -84,7 +84,7 @@
 }
 @font-face {
   font-family: "Lato";
-  src: local("Lato Heavy"), local("Lato-Heavy"), url("latoheavy.woff2") format("woff2"), url("latoheavy.woff") format("woff"), url("latoheavy.ttf") format("truetype");
+  src: local("Lato Heavy"), local("Lato-Heavy"), url("/src/fonts/lato/latoheavy.woff2") format("woff2"), url("/src/fonts/lato/latoheavy.woff") format("woff"), url("/src/fonts/lato/latoheavy.ttf") format("truetype");
   font-weight: 800;
   font-style: normal;
 }

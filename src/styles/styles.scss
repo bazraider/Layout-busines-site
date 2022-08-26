@@ -70,12 +70,15 @@ body {
 
 main {
   flex: 1 0 auto;
+  width: 100%;
 
   .banner-content {
     height: 750px;
     background-image: url('../img/main_image.jpg');
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: -10px -100px;
+    background-position: center center;
+    background-color: rgba(16, 16, 29, 0.9);
 
     .banner-content__inner {
       max-width: 1172px;
@@ -161,8 +164,46 @@ main {
           }
         }
       }
+    }
+  }
 
+  .order {
+    height: 920px;
+    background-image: url('../img/world_background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: rgba(16, 16, 29, 0.9);
 
+    .order__inner {
+      max-width: 1172px;
+      max-height: 648px;
+      margin: 0 auto;
+      padding-top: 120px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #FFF;
+
+      .order__title {
+        margin: 0;
+        text-transform: uppercase;
+        font-family: 'Lato';
+        font-weight: 800;
+        font-size: 36px;
+
+        span {
+          color: #3E9CDC;
+        }
+      }
+
+      .order__scheme {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+
+      }
     }
   }
 }
