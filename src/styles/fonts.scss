@@ -61,9 +61,9 @@
 @font-face {
   font-family: 'Lato';
   src: local('Lato Regular'), local('Lato-Regular'),
-    url('latoregular.woff2') format('woff2'),
-    url('latoregular.woff') format('woff'),
-    url('latoregular.ttf') format('truetype');
+    url('/src/fonts/lato/latoregular.woff2') format('woff2'),
+    url('/src/fonts/lato/latoregular.woff') format('woff'),
+    url('/src/fonts/lato/latoregular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
@@ -121,9 +121,9 @@
 @font-face {
   font-family: 'Lato';
   src: local('Lato Bold'), local('Lato-Bold'),
-    url('latobold.woff2') format('woff2'),
-    url('latobold.woff') format('woff'),
-    url('latobold.ttf') format('truetype');
+    url('/src/fonts/lato/latobold.woff2') format('woff2'),
+    url('/src/fonts/lato/latobold.woff') format('woff'),
+    url('/src/fonts/lato/latobold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
