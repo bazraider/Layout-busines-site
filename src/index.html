@@ -57,27 +57,66 @@
             <img class="order__scheme-img" src="/src/img/search.svg" alt="search">
             <p class="order__scheme-text">Lorem ipsum dolor sit amet</p>
           </div>
-          <span class="order__point"></span>
+          <span class="order__point">
+            <span class="order__point-pseudo"></span>
+          </span>
           <div class="order__scheme-item">
             <img class="order__scheme-img" src="/src/img/discount.svg" alt="discount">
             <p>Сonsecteturadipiscing elit</p>
           </div>
-          <span class="order__point"></span>
+          <span class="order__point">
+            <span class="order__point-pseudo"></span>
+          </span>
           <div class="order__scheme-item">
             <img class="order__scheme-img" src="/src/img/file.svg" alt="file">
             <p>Sed do eiusmod tempor</p>
           </div>
-          <span class="order__point"></span>
+          <span class="order__point">
+            <span class="order__point-pseudo"></span>
+          </span>
           <div class="order__scheme-item">
             <img class="order__scheme-img" src="/src/img/mail.svg" alt="mail">
             <p>Esse cillum dolore eu fugiat</p>
           </div>
-          <span class="order__point"></span>
+          <span class="order__point">
+            <span class="order__point-pseudo"></span>
+          </span>
           <div class="order__scheme-item">
             <img class="order__scheme-img" src="/src/img/cash.svg" alt="cash">
             <p>Excepteur sint occaecat cupidatat non proident</p>
           </div>
         </div>
+        <div class="order__input-form">
+          <select name="Выберите тип системы" id="">
+            <option disabled selected value="">Выберите тип системы</option>
+            <option value="1">Sed ut perspiciatis</option>
+            <option value="2">Nemo enim ipsam</option>
+            <option value="3">Et harum quidem</option>
+            <option value="4">Temporibus autem</option>
+            <option value="5">Itaque earum rerum</option>
+            <option value="6">Nemo enim ipsam</option>
+            <option value="7">Nemo enim ipsam</option>
+            <option value="8">Nemo enim ipsam</option>
+            <option value="9">Nemo enim ipsam</option>
+            <option value="10">Nemo enim ipsam</option>
+            <option value="11">Nemo enim ipsam</option>
+            <option value="12">Nemo enim ipsam</option>
+            <option value="13">Nemo enim ipsam</option>
+            <option value="14">Nemo enim ipsam</option>
+          </select>
+          <input type="email" placeholder="Ваш e-mail">
+          <input type="name" placeholder="Ваше имя">
+          <div class="setter">
+            <div class="text_container">
+              <span>Sed ut perspiciatis, unde omnis iste natus</span>
+              <span id="rangeValue">75%</span>
+            </div>
+            <input type="range" min="0" max="100" step="1" value="75"
+              onchange="document.getElementById('rangeValue').innerHTML = `${this.value}%`;">
+          </div>
+          <button>Прикрепить файл</button>
+        </div>
+        <button>Отправить</button>
       </div>
     </section>
   </main>

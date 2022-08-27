@@ -277,11 +277,62 @@ main .order .order__inner .order__title {
 main .order .order__inner .order__title span {
   color: #3E9CDC;
 }
+main .order .order__inner .order__description {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 18px;
+  margin: 30px 0 80px 0;
+}
 main .order .order__inner .order__scheme {
+  width: 1168px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+}
+main .order .order__inner .order__scheme .order__scheme-item {
+  width: 209px;
+}
+main .order .order__inner .order__scheme .order__scheme-item p {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 16px;
+}
+main .order .order__inner .order__scheme .order__point {
+  position: relative;
+  top: 47px;
+  min-width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #c4c4c4;
+}
+main .order .order__inner .order__scheme .order__point::after, main .order .order__inner .order__scheme .order__point::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #c4c4c4;
+}
+main .order .order__inner .order__scheme .order__point::after {
+  left: 26px;
+}
+main .order .order__inner .order__scheme .order__point::before {
+  right: 26px;
+}
+main .order .order__inner .order__scheme .order__point .order__point-pseudo::after, main .order .order__inner .order__scheme .order__point .order__point-pseudo::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #c4c4c4;
+}
+main .order .order__inner .order__scheme .order__point .order__point-pseudo::after {
+  left: 52px;
+}
+main .order .order__inner .order__scheme .order__point .order__point-pseudo::before {
+  right: 52px;
 }
 
 footer {
