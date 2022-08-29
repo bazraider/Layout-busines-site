@@ -55,7 +55,7 @@
         <div class="order__scheme">
           <div class="order__scheme-item">
             <img class="order__scheme-img" src="/src/img/search.svg" alt="search">
-            <p class="order__scheme-text">Lorem ipsum dolor sit amet</p>
+            <p class="order__scheme-text">Lorem ipsum dolorsit amet</p>
           </div>
           <span class="order__point">
             <span class="order__point-pseudo"></span>
@@ -76,7 +76,7 @@
           </span>
           <div class="order__scheme-item">
             <img class="order__scheme-img" src="/src/img/mail.svg" alt="mail">
-            <p>Esse cillum dolore eu fugiat</p>
+            <p>Esse cillum doloreeu fugiat</p>
           </div>
           <span class="order__point">
             <span class="order__point-pseudo"></span>
@@ -87,36 +87,39 @@
           </div>
         </div>
         <div class="order__input-form">
-          <select name="Выберите тип системы" id="">
-            <option disabled selected value="">Выберите тип системы</option>
-            <option value="1">Sed ut perspiciatis</option>
-            <option value="2">Nemo enim ipsam</option>
-            <option value="3">Et harum quidem</option>
-            <option value="4">Temporibus autem</option>
-            <option value="5">Itaque earum rerum</option>
-            <option value="6">Nemo enim ipsam</option>
-            <option value="7">Nemo enim ipsam</option>
-            <option value="8">Nemo enim ipsam</option>
-            <option value="9">Nemo enim ipsam</option>
-            <option value="10">Nemo enim ipsam</option>
-            <option value="11">Nemo enim ipsam</option>
-            <option value="12">Nemo enim ipsam</option>
-            <option value="13">Nemo enim ipsam</option>
-            <option value="14">Nemo enim ipsam</option>
+          <select id="order__select-list" name="Выберите тип системы">
+            <option class="order__select-item" disabled selected value="">Выберите тип системы</option>
+            <option class="order__select-item" value="1">Sed ut perspiciatis</option>
+            <option class="order__select-item" value="2">Nemo enim ipsam</option>
+            <option class="order__select-item" value="3">Et harum quidem</option>
+            <option class="order__select-item" value="4">Temporibus autem</option>
+            <option class="order__select-item" value="5">Itaque earum rerum</option>
+            <option class="order__select-item" value="6">Nemo enim ipsam</option>
+            <option class="order__select-item" value="7">Nemo enim ipsam</option>
+            <option class="order__select-item" value="8">Nemo enim ipsam</option>
+            <option class="order__select-item" value="9">Nemo enim ipsam</option>
+            <option class="order__select-item" value="10">Nemo enim ipsam</option>
+            <option class="order__select-item" value="11">Nemo enim ipsam</option>
+            <option class="order__select-item" value="12">Nemo enim ipsam</option>
+            <option class="order__select-item" value="13">Nemo enim ipsam</option>
+            <option class="order__select-item" value="14">Nemo enim ipsam</option>
           </select>
-          <input type="email" placeholder="Ваш e-mail">
-          <input type="name" placeholder="Ваше имя">
-          <div class="setter">
-            <div class="text_container">
-              <span>Sed ut perspiciatis, unde omnis iste natus</span>
-              <span id="rangeValue">75%</span>
+          <input class="order__input" type="email" placeholder="Ваш e-mail">
+          <input class="order__input" type="name" placeholder="Ваше имя">
+          <div class="order__range-line range-line">
+            <div class="range-line__text-container">
+              <span class="range-line__text">Sed ut perspiciatis, unde omnis iste natus</span>
+              <span id="range-line__value">75%</span>
             </div>
-            <input type="range" min="0" max="100" step="1" value="75"
-              onchange="document.getElementById('rangeValue').innerHTML = `${this.value}%`;">
+            <input class="range-line__input" type="range" min="0" max="100" step="1" value="75"
+              onchange="document.getElementById('range-line__value').innerHTML = `${this.value}%`;">
           </div>
-          <button>Прикрепить файл</button>
+          <button class="order__input order__btn_add">
+            <img class="btn_add-img" src="/src/img/list.svg" alt="mail">
+            Прикрепить файл
+          </button>
+          <button class="order__input order__btn_send">Отправить</button>
         </div>
-        <button>Отправить</button>
       </div>
     </section>
   </main>

@@ -210,6 +210,7 @@ main {
         justify-content: space-between;
         flex-wrap: wrap;
         text-align: center;
+        margin-bottom: 72px;
 
         .order__scheme-item {
           width: 209px;
@@ -267,6 +268,87 @@ main {
               right: 52px;
             }
           }
+        }
+      }
+
+      .order__input-form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        #order__select-list,
+        .order__input {
+          width: 370px;
+          height: 48px;
+          border: 1px solid #FFFFFF;
+          background: rgba(255, 255, 255, 0.85);
+          border-radius: 3px;
+          font-family: 'Lato';
+          font-weight: 400;
+          font-size: 18px;
+          margin-bottom: 30px;
+        }
+
+        #order__select-list {
+          padding-left: 4px;
+        }
+
+        .order__input {
+          padding-left: 8px;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+        }
+
+        .range-line {
+          .range-line__text-container {
+            display: flex;
+            justify-content: space-between;
+
+            .range-line__text,
+            #range-line__value {
+              font-family: 'Lato';
+              font-weight: 400;
+              font-size: 18px;
+              margin-bottom: 15px;
+            }
+          }
+
+          .range-line__input {
+            width: 773px;
+          }
+        }
+
+        .order__btn_add,
+        .order__btn_send {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-transform: uppercase;
+          font-family: 'Lato';
+          font-weight: 600;
+          font-size: 15px;
+          line-height: 18px;
+
+          .btn_add-img {
+            margin-right: 8px;
+          }
+        }
+
+        .order__btn_add {
+          padding: 0;
+          padding-right: 10px;
+          background: #FFF;
+          border: 2px solid #3E9CDC;
+          margin-bottom: 55px;
+        }
+
+        .order__btn_send {
+          margin: 0 auto;
+          background: #3E9CDC;
+          border: 1px solid #FFFFFF;
+          border-radius: 4px;
+          color: #FFF;
         }
       }
     }
