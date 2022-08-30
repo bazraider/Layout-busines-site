@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Soft NSK test</title>
   <base target="_blank">
+  <script src="scripts/script.js" defer></script>
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
@@ -110,10 +111,9 @@
           <div class="order__range-line range-line">
             <div class="range-line__text-container">
               <span class="range-line__text">Sed ut perspiciatis, unde omnis iste natus</span>
-              <span id="range-line__value">75%</span>
+              <span id="range-line__value"><output>75%</output></span>
             </div>
-            <input class="range-line__input" type="range" min="0" max="100" step="1" value="75"
-              onchange="document.getElementById('range-line__value').innerHTML = `${this.value}%`;">
+            <input class="range-line__input" type="range" min="0" max="100" step="1" value="75" style="--val: 75">
           </div>
           <button class="order__input order__btn_add">
             <img class="btn_add-img" src="/src/img/list.svg" alt="mail">
