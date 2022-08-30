@@ -39,18 +39,17 @@ body {
 }
 .header .header__inner {
   max-width: 1172px;
-  width: 95%;
   margin: 0 auto;
   min-height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .header .header__inner .header__logo {
   display: block;
-  min-width: 246px;
+  width: 246px;
   height: 22px;
   margin-right: 15px;
   background-image: url(../img/logo.svg);
@@ -60,8 +59,18 @@ body {
   color: white;
   text-transform: uppercase;
 }
+@media screen and (max-width: 545px) {
+  .header .header__inner .header__logo {
+    background-size: 200px;
+  }
+}
 .header .header__inner .header__nav {
   overflow: hidden;
+}
+@media screen and (max-width: 700px) {
+  .header .header__inner .header__nav {
+    display: none;
+  }
 }
 .header .header__inner .header__nav .header__list {
   display: flex;
@@ -70,6 +79,11 @@ body {
   list-style: none;
   padding-left: 0;
   gap: 60px;
+}
+@media screen and (max-width: 835px) {
+  .header .header__inner .header__nav .header__list {
+    gap: 30px;
+  }
 }
 .header .header__inner .header__nav .header__list .header__item .header__link {
   font-family: "Lato";
@@ -82,6 +96,21 @@ body {
 }
 .header .header__inner .header__nav .header__list .header__item :hover {
   color: #43ABF0;
+}
+.header .header__inner .header__menu {
+  display: none;
+}
+@media screen and (max-width: 700px) {
+  .header .header__inner .header__menu {
+    display: block;
+    border: none;
+    -webkit-mask-image: url(../img/menu-mobile.svg);
+            mask-image: url(../img/menu-mobile.svg);
+    background-color: rgb(255, 255, 255);
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+  }
 }
 
 main {
@@ -119,11 +148,40 @@ main .banner-content .banner-content__inner .banner-content__tittle {
 main .banner-content .banner-content__inner .banner-content__tittle span {
   color: #3E9CDC;
 }
+@media screen and (max-width: 670px) {
+  main .banner-content .banner-content__inner .banner-content__tittle {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 570px) {
+  main .banner-content .banner-content__inner .banner-content__tittle {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 520px) {
+  main .banner-content .banner-content__inner .banner-content__tittle {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 450px) {
+  main .banner-content .banner-content__inner .banner-content__tittle {
+    font-size: 25px;
+  }
+}
 main .banner-content .banner-content__inner .banner-content__description {
   font-family: "Lato";
   font-weight: 700;
   font-size: 20px;
   margin: 10px 0;
+}
+@media screen and (max-width: 520px) {
+  main .banner-content .banner-content__inner .banner-content__description {
+    font-size: 16px;
+  }
 }
 main .banner-content .banner-content__inner .banner-content__list {
   font-family: "Lato";
@@ -134,10 +192,17 @@ main .banner-content .banner-content__inner .banner-content__list {
   margin: 0;
   margin-bottom: 80px;
 }
+@media screen and (max-width: 520px) {
+  main .banner-content .banner-content__inner .banner-content__list {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+}
 main .banner-content .banner-content__inner .banner-content__list .banner-content__item {
   list-style-type: "-  ";
 }
 main .banner-content .banner-content__inner .banner-content__buttons-container {
+  width: 100%;
   display: flex;
   flex-direction: row;
   gap: 30px;
@@ -427,7 +492,6 @@ main .order .order__inner .order__input-form .order__btn_add {
   border: 2px solid #3E9CDC;
 }
 main .order .order__inner .order__input-form .order__btn_send {
-  margin: 0 auto;
   padding-left: 0px;
   background: #3E9CDC;
   border: 1px solid #FFFFFF;
