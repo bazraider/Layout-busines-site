@@ -1,63 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap");
 @font-face {
   font-family: "Lato";
-  src: local("Lato Hairline"), local("Lato-Hairline"), url("latohairline.woff2") format("woff2"), url("latohairline.woff") format("woff"), url("latohairline.ttf") format("truetype");
-  font-weight: 100;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Lato";
-  src: local("Lato Hairline Italic"), local("Lato-HairlineItalic"), url("latohairlineitalic.woff2") format("woff2"), url("latohairlineitalic.woff") format("woff"), url("latohairlineitalic.ttf") format("truetype");
-  font-weight: 100;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Lato";
-  src: local("Lato Thin"), local("Lato-Thin"), url("latothin.woff2") format("woff2"), url("latothin.woff") format("woff"), url("latothin.ttf") format("truetype");
-  font-weight: 200;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Lato";
-  src: local("Lato Thin Italic"), local("Lato-ThinItalic"), url("latothinitalic.woff2") format("woff2"), url("latothinitalic.woff") format("woff"), url("latothinitalic.ttf") format("truetype");
-  font-weight: 200;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Lato";
-  src: local("Lato Light"), local("Lato-Light"), url("latolight.woff2") format("woff2"), url("latolight.woff") format("woff"), url("latolight.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Lato";
-  src: local("Lato Light Italic"), local("Lato-LightItalic"), url("latolightitalic.woff2") format("woff2"), url("latolightitalic.woff") format("woff"), url("latolightitalic.ttf") format("truetype");
-  font-weight: 300;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Lato";
   src: local("Lato Regular"), local("Lato-Regular"), url("/src/fonts/lato/latoregular.woff2") format("woff2"), url("/src/fonts/lato/latoregular.woff") format("woff"), url("/src/fonts/lato/latoregular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
-}
-@font-face {
-  font-family: "Lato";
-  src: local("Lato Italic"), local("Lato-Italic"), url("latoitalic.woff2") format("woff2"), url("latoitalic.woff") format("woff"), url("latoitalic.ttf") format("truetype");
-  font-weight: 400;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Lato";
-  src: local("Lato Medium"), local("Lato-Medium"), url("latomedium.woff2") format("woff2"), url("latomedium.woff") format("woff"), url("latomedium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Lato";
-  src: local("Lato Medium Italic"), local("Lato-MediumItalic"), url("latomediumitalic.woff2") format("woff2"), url("latomediumitalic.woff") format("woff"), url("latomediumitalic.ttf") format("truetype");
-  font-weight: 500;
-  font-style: italic;
 }
 @font-face {
   font-family: "Lato";
@@ -67,21 +13,9 @@
 }
 @font-face {
   font-family: "Lato";
-  src: local("Lato Semibold Italic"), local("Lato-SemiboldItalic"), url("latosemibolditalic.woff2") format("woff2"), url("latosemibolditalic.woff") format("woff"), url("latosemibolditalic.ttf") format("truetype");
-  font-weight: 600;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Lato";
   src: local("Lato Bold"), local("Lato-Bold"), url("/src/fonts/lato/latobold.woff2") format("woff2"), url("/src/fonts/lato/latobold.woff") format("woff"), url("/src/fonts/lato/latobold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
-}
-@font-face {
-  font-family: "Lato";
-  src: local("Lato Bold Italic"), local("Lato-BoldItalic"), url("latobolditalic.woff2") format("woff2"), url("latobolditalic.woff") format("woff"), url("latobolditalic.ttf") format("truetype");
-  font-weight: 700;
-  font-style: italic;
 }
 @font-face {
   font-family: "Lato";
@@ -89,38 +23,21 @@
   font-weight: 800;
   font-style: normal;
 }
-@font-face {
-  font-family: "Lato";
-  src: local("Lato Heavy Italic"), local("Lato-HeavyItalic"), url("latoheavyitalic.woff2") format("woff2"), url("latoheavyitalic.woff") format("woff"), url("latoheavyitalic.ttf") format("truetype");
-  font-weight: 800;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Lato";
-  src: local("Lato Black"), local("Lato-Black"), url("latoblack.woff2") format("woff2"), url("latoblack.woff") format("woff"), url("latoblack.ttf") format("truetype");
-  font-weight: 900;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Lato";
-  src: local("Lato Black Italic"), local("Lato-BlackItalic"), url("latoblackitalic.woff2") format("woff2"), url("latoblackitalic.woff") format("woff"), url("latoblackitalic.ttf") format("truetype");
-  font-weight: 900;
-  font-style: italic;
-}
-html,
-body {
-  height: 100%;
-}
-
 body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: rgba(16, 16, 29, 0.9);
   color: white;
 }
 
 .header {
+  width: 100%;
+  background-color: rgba(16, 16, 29, 0.9);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.header .header__inner {
   max-width: 1172px;
   width: 95%;
   margin: 0 auto;
@@ -131,7 +48,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
-.header .header__logo {
+.header .header__inner .header__logo {
   display: block;
   min-width: 246px;
   height: 22px;
@@ -143,10 +60,10 @@ body {
   color: white;
   text-transform: uppercase;
 }
-.header .header__nav {
+.header .header__inner .header__nav {
   overflow: hidden;
 }
-.header .header__nav .header__list {
+.header .header__inner .header__nav .header__list {
   display: flex;
   align-items: center;
   text-align: center;
@@ -154,7 +71,7 @@ body {
   padding-left: 0;
   gap: 60px;
 }
-.header .header__nav .header__list .header__item .header__link {
+.header .header__inner .header__nav .header__list .header__item .header__link {
   font-family: "Lato";
   font-weight: 600;
   font-size: 13px;
@@ -163,7 +80,7 @@ body {
   color: white;
   text-transform: uppercase;
 }
-.header .header__nav .header__list .header__item :hover {
+.header .header__inner .header__nav .header__list .header__item :hover {
   color: #43ABF0;
 }
 
@@ -183,6 +100,8 @@ main .banner-content .banner-content__inner {
   max-width: 1172px;
   margin: 0 auto;
   padding-top: 102px;
+  padding-left: 30px;
+  padding-right: 30px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -262,6 +181,8 @@ main .order .order__inner {
   max-height: 648px;
   margin: 0 auto;
   padding-top: 120px;
+  padding-left: 30px;
+  padding-right: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -336,10 +257,11 @@ main .order .order__inner .order__scheme .order__point .order__point-pseudo::bef
   right: 52px;
 }
 main .order .order__inner .order__input-form {
+  width: 100%;
   position: relative;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 }
 main .order .order__inner .order__input-form select {
   outline: 0;
@@ -351,9 +273,23 @@ main .order .order__inner .order__input-form select option {
   color: #FFF;
   background-color: rgba(39, 39, 51, 0.9);
 }
-main .order .order__inner .order__input-form #order__select-list,
-main .order .order__inner .order__input-form .order__input {
-  width: 370px;
+main .order .order__inner .order__input-form .container1 {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 29px;
+}
+@media screen and (max-width: 960px) {
+  main .order .order__inner .order__input-form .container1 {
+    gap: 20px;
+    justify-content: center;
+  }
+}
+main .order .order__inner .order__input-form .container1 #order__select-list {
+  width: 31.6%;
+  min-width: 280px;
   height: 48px;
   border: 1px solid #FFF;
   background: rgba(255, 255, 255, 0.85);
@@ -361,32 +297,72 @@ main .order .order__inner .order__input-form .order__input {
   font-family: "Lato";
   font-weight: 400;
   font-size: 18px;
-}
-main .order .order__inner .order__input-form #order__select-list {
-  padding-left: 9px;
+  padding-left: 5px;
   cursor: pointer;
 }
+@media screen and (max-width: 660px) {
+  main .order .order__inner .order__input-form .container1 #order__select-list {
+    width: 100%;
+  }
+}
 main .order .order__inner .order__input-form .order__input {
-  margin-bottom: 30px;
+  width: 31.6%;
+  min-width: 280px;
+  height: 48px;
+  padding: 0;
   padding-left: 8px;
   box-sizing: border-box;
+  border: 1px solid #FFF;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 3px;
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 18px;
 }
-main .order .order__inner .order__input-form .range-line .range-line__text-container {
+@media screen and (max-width: 660px) {
+  main .order .order__inner .order__input-form .order__input {
+    width: 100%;
+  }
+}
+main .order .order__inner .order__input-form .container2 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 960px) {
+  main .order .order__inner .order__input-form .container2 {
+    gap: 40px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}
+main .order .order__inner .order__input-form .container2 .range-line {
+  width: 66%;
+}
+@media screen and (max-width: 660px) {
+  main .order .order__inner .order__input-form .container2 .range-line {
+    width: 100%;
+  }
+}
+main .order .order__inner .order__input-form .container2 .range-line .range-line__text-container {
   display: flex;
   justify-content: space-between;
 }
-main .order .order__inner .order__input-form .range-line .range-line__text-container .range-line__text,
-main .order .order__inner .order__input-form .range-line .range-line__text-container #range-line__value {
+main .order .order__inner .order__input-form .container2 .range-line .range-line__text-container .range-line__text,
+main .order .order__inner .order__input-form .container2 .range-line .range-line__text-container #range-line__value {
   font-family: "Lato";
   font-weight: 400;
   font-size: 18px;
   margin-bottom: 15px;
 }
-main .order .order__inner .order__input-form .range-line input[type=range] {
+main .order .order__inner .order__input-form .container2 .range-line input[type=range] {
   -webkit-appearance: none;
   -moz-appearance: none;
   background: rgba(255, 255, 255, 0.7);
-  width: 773px;
+  width: 100%;
   height: 6px;
   padding: 0;
   border: 1px solid #FFFFFF;
@@ -394,7 +370,7 @@ main .order .order__inner .order__input-form .range-line input[type=range] {
   outline: none;
   cursor: pointer;
 }
-main .order .order__inner .order__input-form .range-line input[type=range]::-webkit-slider-thumb {
+main .order .order__inner .order__input-form .container2 .range-line input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   -moz-appearance: none;
   -webkit-border-radius: 5px;
@@ -404,7 +380,7 @@ main .order .order__inner .order__input-form .range-line input[type=range]::-web
   background: #42A9ED;
   border: 3px solid #286690;
 }
-main .order .order__inner .order__input-form .range-line input[type=range]::-moz-range-thumb {
+main .order .order__inner .order__input-form .container2 .range-line input[type=range]::-moz-range-thumb {
   -webkit-appearance: none;
   -moz-appearance: none;
   -moz-border-radius: 5px;
@@ -426,6 +402,12 @@ main .order .order__inner .order__input-form .order__btn_send {
   line-height: 18px;
   cursor: pointer;
 }
+@media screen and (max-width: 660px) {
+  main .order .order__inner .order__input-form .order__btn_add,
+main .order .order__inner .order__input-form .order__btn_send {
+    width: 45%;
+  }
+}
 main .order .order__inner .order__input-form .order__btn_add:hover,
 main .order .order__inner .order__input-form .order__btn_send:hover {
   box-shadow: 0px 5px 10px 2px rgba(255, 255, 255, 0.2);
@@ -443,10 +425,10 @@ main .order .order__inner .order__input-form .order__btn_add {
   padding-right: 10px;
   background: #FFF;
   border: 2px solid #3E9CDC;
-  margin-bottom: 55px;
 }
 main .order .order__inner .order__input-form .order__btn_send {
   margin: 0 auto;
+  padding-left: 0px;
   background: #3E9CDC;
   border: 1px solid #FFFFFF;
   border-radius: 4px;

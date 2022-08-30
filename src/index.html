@@ -14,23 +14,25 @@
 
 <body>
   <header class="header">
-    <a class="header__logo" href="#"></a>
-    <nav class="header__nav">
-      <ul class="header__list">
-        <li class="header__item">
-          <a class="header__link" href="#">Бизнес</a>
-        </li>
-        <li class="header__item">
-          <a class="header__link" href="#">О нас</a>
-        </li>
-        <li class="header__item">
-          <a class="header__link" href="#">Цены</a>
-        </li>
-        <li class="header__item">
-          <a class="header__link" href="#">Оформить заказ</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="header__inner">
+      <a class="header__logo" href="#"></a>
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__link" href="#">Бизнес</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#">О нас</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#">Цены</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#">Оформить заказ</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main>
     <section class="banner-content">
@@ -89,36 +91,40 @@
           </div>
         </div>
         <div class="order__input-form">
-          <select id="order__select-list">
-            <option class="order__select-item" disabled selected value="0">Выберите тип системы</option>
-            <option class="order__select-item" value="1">Sed ut perspiciatis</option>
-            <option class="order__select-item" value="2">Nemo enim ipsam</option>
-            <option class="order__select-item" value="3">Et harum quidem</option>
-            <option class="order__select-item" value="4">Temporibus autem</option>
-            <option class="order__select-item" value="5">Itaque earum rerum</option>
-            <option class="order__select-item" value="6">Nemo enim ipsam</option>
-            <option class="order__select-item" value="7">Nemo enim ipsam</option>
-            <option class="order__select-item" value="8">Nemo enim ipsam</option>
-            <option class="order__select-item" value="9">Nemo enim ipsam</option>
-            <option class="order__select-item" value="10">Nemo enim ipsam</option>
-            <option class="order__select-item" value="11">Nemo enim ipsam</option>
-            <option class="order__select-item" value="12">Nemo enim ipsam</option>
-            <option class="order__select-item" value="13">Nemo enim ipsam</option>
-            <option class="order__select-item" value="14">Nemo enim ipsam</option>
-          </select>
-          <input class="order__input" type="email" placeholder="Ваш e-mail">
-          <input class="order__input" type="name" placeholder="Ваше имя">
-          <div class="order__range-line range-line">
-            <div class="range-line__text-container">
-              <span class="range-line__text">Sed ut perspiciatis, unde omnis iste natus</span>
-              <span id="range-line__value"><output>75%</output></span>
-            </div>
-            <input class="range-line__input" type="range" min="0" max="100" step="1" value="75" style="--val: 75">
+          <div class="container1">
+            <select id="order__select-list">
+              <option class="order__select-item" disabled selected value="0">Выберите тип системы</option>
+              <option class="order__select-item" value="1">Sed ut perspiciatis</option>
+              <option class="order__select-item" value="2">Nemo enim ipsam</option>
+              <option class="order__select-item" value="3">Et harum quidem</option>
+              <option class="order__select-item" value="4">Temporibus autem</option>
+              <option class="order__select-item" value="5">Itaque earum rerum</option>
+              <option class="order__select-item" value="6">Nemo enim ipsam</option>
+              <option class="order__select-item" value="7">Nemo enim ipsam</option>
+              <option class="order__select-item" value="8">Nemo enim ipsam</option>
+              <option class="order__select-item" value="9">Nemo enim ipsam</option>
+              <option class="order__select-item" value="10">Nemo enim ipsam</option>
+              <option class="order__select-item" value="11">Nemo enim ipsam</option>
+              <option class="order__select-item" value="12">Nemo enim ipsam</option>
+              <option class="order__select-item" value="13">Nemo enim ipsam</option>
+              <option class="order__select-item" value="14">Nemo enim ipsam</option>
+            </select>
+            <input class="order__input" name="user_email" type="email" placeholder="Ваш e-mail">
+            <input class="order__input" name="user_name" type="name" placeholder="Ваше имя">
           </div>
-          <button class="order__input order__btn_add">
-            <img class="btn_add-img" src="/src/img/list.svg" alt="mail">
-            Прикрепить файл
-          </button>
+          <div class="container2">
+            <div class="order__range-line range-line">
+              <div class="range-line__text-container">
+                <span class="range-line__text">Sed ut perspiciatis, unde omnis iste natus</span>
+                <span id="range-line__value"><output>75%</output></span>
+              </div>
+              <input class="range-line__input" type="range" min="0" max="100" step="1" value="75" style="--val: 75">
+            </div>
+            <button class="order__input order__btn_add">
+              <img class="btn_add-img" src="/src/img/list.svg" alt="mail">
+              Прикрепить файл
+            </button>
+          </div>
           <button class="order__input order__btn_send">Отправить</button>
         </div>
       </div>
