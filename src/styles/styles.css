@@ -370,8 +370,37 @@ main .order .order__inner .order__input-form .range-line .range-line__text-conta
   font-size: 18px;
   margin-bottom: 15px;
 }
-main .order .order__inner .order__input-form .range-line .range-line__input {
+main .order .order__inner .order__input-form .range-line input[type=range] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: rgba(255, 255, 255, 0.7);
   width: 773px;
+  height: 6px;
+  padding: 0;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+main .order .order__inner .order__input-form .range-line input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-border-radius: 5px;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background: #42A9ED;
+  border: 3px solid #286690;
+}
+main .order .order__inner .order__input-form .range-line input[type=range]::-moz-range-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -moz-border-radius: 5px;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background: #42A9ED;
+  border: 3px solid #286690;
 }
 main .order .order__inner .order__input-form .order__btn_add,
 main .order .order__inner .order__input-form .order__btn_send {
