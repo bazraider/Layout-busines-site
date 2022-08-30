@@ -383,6 +383,15 @@ main .order .order__inner .order__input-form .order__btn_send {
   font-weight: 600;
   font-size: 15px;
   line-height: 18px;
+  cursor: pointer;
+}
+main .order .order__inner .order__input-form .order__btn_add:hover,
+main .order .order__inner .order__input-form .order__btn_send:hover {
+  box-shadow: 0px 5px 10px 2px rgba(255, 255, 255, 0.2);
+}
+main .order .order__inner .order__input-form .order__btn_add:active,
+main .order .order__inner .order__input-form .order__btn_send:active {
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
 }
 main .order .order__inner .order__input-form .order__btn_add .btn_add-img,
 main .order .order__inner .order__input-form .order__btn_send .btn_add-img {
@@ -402,9 +411,46 @@ main .order .order__inner .order__input-form .order__btn_send {
   border-radius: 4px;
   color: #FFF;
 }
+main .order .order__inner .order__input-form .order__btn_send:hover {
+  background: #43ABF0;
+}
 
 footer {
-  height: 80px;
+  min-height: 80px;
   background: #3D4050;
   flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer__inner {
+  max-width: 1172px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  color: #FFF;
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+}
+footer .footer__inner hr {
+  height: 18px;
+  margin: 0;
+}
+footer .footer__inner a {
+  text-decoration: none;
+}
+footer .footer__inner .footer__item {
+  text-decoration: none;
+  color: #C3C3C3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer__inner .footer__item .footer__item-img {
+  margin-right: 10px;
 }/*# sourceMappingURL=styles.css.map */
