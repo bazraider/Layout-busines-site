@@ -336,26 +336,38 @@ main .order .order__inner .order__scheme .order__point .order__point-pseudo::bef
   right: 52px;
 }
 main .order .order__inner .order__input-form {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+main .order .order__inner .order__input-form select {
+  outline: 0;
+  color: #272733;
+  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+main .order .order__inner .order__input-form select option {
+  color: #FFF;
+  background-color: rgba(39, 39, 51, 0.9);
 }
 main .order .order__inner .order__input-form #order__select-list,
 main .order .order__inner .order__input-form .order__input {
   width: 370px;
   height: 48px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #FFF;
   background: rgba(255, 255, 255, 0.85);
   border-radius: 3px;
   font-family: "Lato";
   font-weight: 400;
   font-size: 18px;
-  margin-bottom: 30px;
 }
 main .order .order__inner .order__input-form #order__select-list {
-  padding-left: 4px;
+  padding-left: 9px;
+  cursor: pointer;
 }
 main .order .order__inner .order__input-form .order__input {
+  margin-bottom: 30px;
   padding-left: 8px;
   box-sizing: border-box;
 }
@@ -386,8 +398,8 @@ main .order .order__inner .order__input-form .range-line input[type=range]::-web
   -webkit-appearance: none;
   -moz-appearance: none;
   -webkit-border-radius: 5px;
-  height: 24px;
-  width: 24px;
+  height: 26px;
+  width: 26px;
   border-radius: 50%;
   background: #42A9ED;
   border: 3px solid #286690;
