@@ -125,6 +125,11 @@ main .banner-content {
   background-position: center center;
   background-color: rgba(16, 16, 29, 0.9);
 }
+@media screen and (max-width: 836px) {
+  main .banner-content {
+    background-position: 75%;
+  }
+}
 main .banner-content .banner-content__inner {
   max-width: 1172px;
   margin: 0 auto;
@@ -621,8 +626,6 @@ footer .footer__inner {
   font-weight: 400;
   font-size: 13px;
   line-height: 16px;
-  padding-left: 30px;
-  padding-right: 30px;
 }
 footer .footer__inner hr {
   height: 18px;
