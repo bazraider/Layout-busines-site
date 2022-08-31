@@ -252,12 +252,22 @@ main .order .order__inner {
   align-items: center;
   color: #FFF;
 }
+@media screen and (max-width: 1000px) {
+  main .order .order__inner {
+    padding-top: 50px;
+  }
+}
 main .order .order__inner .order__title {
   margin: 0;
   text-transform: uppercase;
   font-family: "Lato";
   font-weight: 800;
   font-size: 36px;
+}
+@media screen and (max-width: 556px) {
+  main .order .order__inner .order__title {
+    text-align: center;
+  }
 }
 main .order .order__inner .order__title span {
   color: #3E9CDC;
@@ -268,21 +278,84 @@ main .order .order__inner .order__description {
   font-size: 18px;
   margin: 30px 0 80px 0;
 }
+@media screen and (max-width: 1000px) {
+  main .order .order__inner .order__description {
+    margin: 20px 0 40px 0;
+  }
+}
+@media screen and (max-width: 556px) {
+  main .order .order__inner .order__description {
+    text-align: center;
+  }
+}
 main .order .order__inner .order__scheme {
-  width: 1168px;
+  max-width: 1168px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   text-align: center;
   margin-bottom: 72px;
 }
+@media screen and (max-width: 1183px) {
+  main .order .order__inner .order__scheme {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1000px) {
+  main .order .order__inner .order__scheme {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 800px) {
+  main .order .order__inner .order__scheme {
+    flex-wrap: wrap;
+  }
+}
 main .order .order__inner .order__scheme .order__scheme-item {
   width: 209px;
+}
+@media screen and (max-width: 1000px) {
+  main .order .order__inner .order__scheme .order__scheme-item {
+    width: 140px;
+  }
+}
+@media screen and (max-width: 800px) {
+  main .order .order__inner .order__scheme .order__scheme-item {
+    width: 182px;
+  }
+}
+@media screen and (max-width: 625px) {
+  main .order .order__inner .order__scheme .order__scheme-item {
+    width: 160px;
+  }
+}
+@media screen and (max-width: 556px) {
+  main .order .order__inner .order__scheme .order__scheme-item {
+    width: 140px;
+  }
+}
+@media screen and (max-width: 360px) {
+  main .order .order__inner .order__scheme .order__scheme-item {
+    width: 100px;
+  }
+}
+main .order .order__inner .order__scheme .order__scheme-item img {
+  width: 50%;
 }
 main .order .order__inner .order__scheme .order__scheme-item p {
   font-family: "Lato";
   font-weight: 400;
   font-size: 16px;
+}
+@media screen and (max-width: 1000px) {
+  main .order .order__inner .order__scheme .order__scheme-item p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 360px) {
+  main .order .order__inner .order__scheme .order__scheme-item p {
+    overflow: hidden;
+  }
 }
 main .order .order__inner .order__scheme .order__point {
   position: relative;
@@ -291,6 +364,16 @@ main .order .order__inner .order__scheme .order__point {
   height: 6px;
   border-radius: 50%;
   background-color: #c4c4c4;
+}
+@media screen and (max-width: 800px) {
+  main .order .order__inner .order__scheme .order__point {
+    display: none;
+  }
+}
+@media screen and (max-width: 1000px) {
+  main .order .order__inner .order__scheme .order__point {
+    top: 33px;
+  }
 }
 main .order .order__inner .order__scheme .order__point::after, main .order .order__inner .order__scheme .order__point::before {
   content: "";
@@ -303,8 +386,18 @@ main .order .order__inner .order__scheme .order__point::after, main .order .orde
 main .order .order__inner .order__scheme .order__point::after {
   left: 26px;
 }
+@media screen and (max-width: 1000px) {
+  main .order .order__inner .order__scheme .order__point::after {
+    left: 20px;
+  }
+}
 main .order .order__inner .order__scheme .order__point::before {
   right: 26px;
+}
+@media screen and (max-width: 1000px) {
+  main .order .order__inner .order__scheme .order__point::before {
+    right: 20px;
+  }
 }
 main .order .order__inner .order__scheme .order__point .order__point-pseudo::after, main .order .order__inner .order__scheme .order__point .order__point-pseudo::before {
   content: "";
@@ -319,6 +412,11 @@ main .order .order__inner .order__scheme .order__point .order__point-pseudo::aft
 }
 main .order .order__inner .order__scheme .order__point .order__point-pseudo::before {
   right: 52px;
+}
+@media screen and (max-width: 1183px) {
+  main .order .order__inner .order__scheme .order__point .order__point-pseudo {
+    display: none;
+  }
 }
 main .order .order__inner .order__input-form {
   width: 100%;
