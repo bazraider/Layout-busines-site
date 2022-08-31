@@ -234,7 +234,7 @@ main .banner-content .banner-content__inner .banner-content__buttons-container .
   background: #43ABF0;
 }
 main .order {
-  height: 920px;
+  min-height: 920px;
   background-image: url("../img/world_background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -243,7 +243,6 @@ main .order {
 }
 main .order .order__inner {
   max-width: 1172px;
-  max-height: 648px;
   margin: 0 auto;
   padding-top: 120px;
   padding-left: 30px;
@@ -338,7 +337,7 @@ main .order .order__inner .order__input-form select option {
   color: #FFF;
   background-color: rgba(39, 39, 51, 0.9);
 }
-main .order .order__inner .order__input-form .container1 {
+main .order .order__inner .order__input-form .input__container {
   width: 100%;
   display: flex;
   flex-flow: row wrap;
@@ -347,12 +346,12 @@ main .order .order__inner .order__input-form .container1 {
   margin-bottom: 29px;
 }
 @media screen and (max-width: 960px) {
-  main .order .order__inner .order__input-form .container1 {
+  main .order .order__inner .order__input-form .input__container {
     gap: 20px;
     justify-content: center;
   }
 }
-main .order .order__inner .order__input-form .container1 #order__select-list {
+main .order .order__inner .order__input-form .input__container #order__select-list {
   width: 31.6%;
   min-width: 280px;
   height: 48px;
@@ -366,7 +365,7 @@ main .order .order__inner .order__input-form .container1 #order__select-list {
   cursor: pointer;
 }
 @media screen and (max-width: 660px) {
-  main .order .order__inner .order__input-form .container1 #order__select-list {
+  main .order .order__inner .order__input-form .input__container #order__select-list {
     width: 100%;
   }
 }
@@ -389,7 +388,7 @@ main .order .order__inner .order__input-form .order__input {
     width: 100%;
   }
 }
-main .order .order__inner .order__input-form .container2 {
+main .order .order__inner .order__input-form .range-line__container {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -398,32 +397,32 @@ main .order .order__inner .order__input-form .container2 {
   margin-bottom: 50px;
 }
 @media screen and (max-width: 960px) {
-  main .order .order__inner .order__input-form .container2 {
+  main .order .order__inner .order__input-form .range-line__container {
     gap: 40px;
     justify-content: center;
     margin-bottom: 20px;
   }
 }
-main .order .order__inner .order__input-form .container2 .range-line {
+main .order .order__inner .order__input-form .range-line__container .range-line {
   width: 66%;
 }
 @media screen and (max-width: 660px) {
-  main .order .order__inner .order__input-form .container2 .range-line {
+  main .order .order__inner .order__input-form .range-line__container .range-line {
     width: 100%;
   }
 }
-main .order .order__inner .order__input-form .container2 .range-line .range-line__text-container {
+main .order .order__inner .order__input-form .range-line__container .range-line .range-line__text-container {
   display: flex;
   justify-content: space-between;
 }
-main .order .order__inner .order__input-form .container2 .range-line .range-line__text-container .range-line__text,
-main .order .order__inner .order__input-form .container2 .range-line .range-line__text-container #range-line__value {
+main .order .order__inner .order__input-form .range-line__container .range-line .range-line__text-container .range-line__text,
+main .order .order__inner .order__input-form .range-line__container .range-line .range-line__text-container #range-line__value {
   font-family: "Lato";
   font-weight: 400;
   font-size: 18px;
   margin-bottom: 15px;
 }
-main .order .order__inner .order__input-form .container2 .range-line input[type=range] {
+main .order .order__inner .order__input-form .range-line__container .range-line input[type=range] {
   -webkit-appearance: none;
   -moz-appearance: none;
   background: rgba(255, 255, 255, 0.7);
@@ -435,7 +434,7 @@ main .order .order__inner .order__input-form .container2 .range-line input[type=
   outline: none;
   cursor: pointer;
 }
-main .order .order__inner .order__input-form .container2 .range-line input[type=range]::-webkit-slider-thumb {
+main .order .order__inner .order__input-form .range-line__container .range-line input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   -moz-appearance: none;
   -webkit-border-radius: 5px;
@@ -445,7 +444,7 @@ main .order .order__inner .order__input-form .container2 .range-line input[type=
   background: #42A9ED;
   border: 3px solid #286690;
 }
-main .order .order__inner .order__input-form .container2 .range-line input[type=range]::-moz-range-thumb {
+main .order .order__inner .order__input-form .range-line__container .range-line input[type=range]::-moz-range-thumb {
   -webkit-appearance: none;
   -moz-appearance: none;
   -moz-border-radius: 5px;
@@ -497,6 +496,7 @@ main .order .order__inner .order__input-form .order__btn_send {
   border: 1px solid #FFFFFF;
   border-radius: 4px;
   color: #FFF;
+  margin-bottom: 50px;
 }
 main .order .order__inner .order__input-form .order__btn_send:hover {
   background: #43ABF0;
@@ -523,6 +523,8 @@ footer .footer__inner {
   font-weight: 400;
   font-size: 13px;
   line-height: 16px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 footer .footer__inner hr {
   height: 18px;
@@ -530,6 +532,42 @@ footer .footer__inner hr {
 }
 footer .footer__inner a {
   text-decoration: none;
+}
+@media screen and (max-width: 1200px) {
+  footer .footer__inner .footer__text-container {
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+}
+@media screen and (max-width: 1090px) {
+  footer .footer__inner .footer__text-container {
+    width: 100%;
+    text-align: center;
+  }
+}
+footer .footer__inner .footer__service-container,
+footer .footer__inner .footer__contact-container {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1200px) {
+  footer .footer__inner .footer__service-container,
+footer .footer__inner .footer__contact-container {
+    gap: 10px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+}
+@media screen and (max-width: 1090px) {
+  footer .footer__inner .footer__line_left {
+    display: none;
+  }
+}
+@media screen and (max-width: 746.4px) {
+  footer .footer__inner .footer__line_right {
+    display: none;
+  }
 }
 footer .footer__inner .footer__item {
   text-decoration: none;

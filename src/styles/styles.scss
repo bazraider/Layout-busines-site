@@ -226,7 +226,7 @@ main {
   }
 
   .order {
-    height: 920px;
+    min-height: 920px;
     background-image: url('../img/world_background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -235,7 +235,6 @@ main {
 
     .order__inner {
       max-width: 1172px;
-      max-height: 648px;
       margin: 0 auto;
       padding-top: 120px;
       padding-left: 30px;
@@ -350,7 +349,7 @@ main {
           }
         }
 
-        .container1 {
+        .input__container {
           width: 100%;
           display: flex;
           flex-flow: row wrap;
@@ -401,7 +400,7 @@ main {
           }
         }
 
-        .container2 {
+        .range-line__container {
           width: 100%;
           display: flex;
           flex-wrap: wrap;
@@ -518,6 +517,7 @@ main {
           border: 1px solid #FFFFFF;
           border-radius: 4px;
           color: #FFF;
+          margin-bottom: 50px;
 
           &:hover {
             background: #43ABF0;
@@ -549,6 +549,8 @@ footer {
     font-weight: 400;
     font-size: 13px;
     line-height: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
 
     hr {
       height: 18px;
@@ -557,6 +559,48 @@ footer {
 
     a {
       text-decoration: none;
+    }
+
+    .footer__text-container {
+      // margin: 0 auto;
+      // padding: 0 15px;
+      //   width: 100%;
+      // text-align: center;
+
+      @media screen and (max-width: 1200px) {
+        margin: 0 auto;
+        padding: 0 15px;
+      }
+
+      @media screen and (max-width: 1090px) {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    .footer__service-container,
+    .footer__contact-container {
+      display: flex;
+      gap: 40px;
+      justify-content: space-between;
+
+      @media screen and (max-width: 1200px) {
+        gap: 10px;
+        margin: 0 auto;
+        padding: 0 15px;
+      }
+    }
+
+    .footer__line_left {
+      @media screen and (max-width: 1090px) {
+        display: none;
+      }
+    }
+
+    .footer__line_right {
+      @media screen and (max-width: 746.4px) {
+        display: none;
+      }
     }
 
     .footer__item {
