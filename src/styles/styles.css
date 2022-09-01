@@ -69,7 +69,7 @@ body {
 }
 .header .header__inner .menu-button-container {
   display: none;
-  height: 100%;
+  height: 22px;
   width: 30px;
   cursor: pointer;
   flex-direction: column;
@@ -111,7 +111,7 @@ body {
 .header .header__inner .header__list li {
   overflow: hidden;
 }
-.header .header__inner .header__list .header__item .header__link {
+.header .header__inner .header__list .header__link {
   font-family: "Lato";
   font-weight: 600;
   font-size: 13px;
@@ -120,7 +120,7 @@ body {
   color: white;
   text-transform: uppercase;
 }
-.header .header__inner .header__list .header__item :hover {
+.header .header__inner .header__list .header__link .header__item :hover {
   color: #43ABF0;
 }
 .header .header__inner #menu-toggle:checked + .menu-button-container .menu-button::before {
@@ -147,8 +147,10 @@ body {
     width: 100%;
     justify-content: center;
     align-items: center;
+    gap: 0;
   }
-  .header .header__inner #menu-toggle ~ .header__list li {
+  .header .header__inner #menu-toggle ~ .header__list a,
+.header .header__inner #menu-toggle ~ .header__list li {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -158,13 +160,16 @@ body {
     border: 0;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
-  .header .header__inner #menu-toggle:checked ~ .header__list li {
-    border: 1px solid #333;
+  .header .header__inner #menu-toggle:checked ~ .header__list a,
+.header .header__inner #menu-toggle:checked ~ .header__list li {
     height: 2.5em;
     padding: 0.5em;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
-  .header .header__inner .header__list > li {
+  .header .header__inner #menu-toggle:checked ~ .header__list a {
+    border: 1px solid #333;
+  }
+  .header .header__inner .header__list > a {
     display: flex;
     justify-content: center;
     margin: 0;
@@ -173,7 +178,11 @@ body {
     color: white;
     background-color: #222;
   }
-  .header .header__inner .header__list > li:not(:last-child) {
+  .header .header__inner .header__list > a:hover {
+    background-color: #286690;
+    color: #43ABF0;
+  }
+  .header .header__inner .header__list > a:not(:last-child) {
     border-bottom: 1px solid #444;
   }
 }
