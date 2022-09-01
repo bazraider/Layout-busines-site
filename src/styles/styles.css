@@ -520,7 +520,6 @@ main .order .order__inner .order__input-form .input__container {
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 29px;
 }
 @media screen and (max-width: 960px) {
   main .order .order__inner .order__input-form .input__container {
@@ -540,6 +539,7 @@ main .order .order__inner .order__input-form .input__container #order__select-li
   font-size: 18px;
   padding-left: 5px;
   cursor: pointer;
+  margin-bottom: 29px;
 }
 @media screen and (max-width: 660px) {
   main .order .order__inner .order__input-form .input__container #order__select-list {
@@ -550,6 +550,7 @@ main .order .order__inner .order__input-form .order__input {
   width: 31.6%;
   min-width: 280px;
   height: 48px;
+  margin-bottom: 29px;
   padding: 0;
   padding-left: 8px;
   box-sizing: border-box;
@@ -571,7 +572,7 @@ main .order .order__inner .order__input-form .range-line__container {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 21px;
 }
 @media screen and (max-width: 960px) {
   main .order .order__inner .order__input-form .range-line__container {
@@ -582,6 +583,7 @@ main .order .order__inner .order__input-form .range-line__container {
 }
 main .order .order__inner .order__input-form .range-line__container .range-line {
   width: 66%;
+  margin-bottom: 29px;
 }
 @media screen and (max-width: 660px) {
   main .order .order__inner .order__input-form .range-line__container .range-line {
