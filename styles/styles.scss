@@ -103,7 +103,7 @@ body {
         text-transform: uppercase;
 
         .header__item {
-          :hover {
+          &:hover {
             color: #43ABF0;
           }
         }

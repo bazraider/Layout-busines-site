@@ -120,7 +120,7 @@ body {
   color: white;
   text-transform: uppercase;
 }
-.header .header__inner .header__list .header__link .header__item :hover {
+.header .header__inner .header__list .header__link .header__item:hover {
   color: #43ABF0;
 }
 .header .header__inner #menu-toggle:checked + .menu-button-container .menu-button::before {
